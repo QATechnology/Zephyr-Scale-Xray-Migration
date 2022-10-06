@@ -46,7 +46,7 @@ def main():
                                  "testtype": "Cucumber",
                                  "fields": {
                                      "summary": summary,
-                                     "project": {"key": "PD"}
+                                     "project": {"key": config['Params']['project']}
                                  },
                                  "gherkin_def": steps['text'],
                                  "xray_test_repository_folder": folder_name
@@ -91,7 +91,7 @@ def main():
                                  "testtype": "Manual",
                                  "fields": {
                                      "summary": summary,
-                                     "project": {"key": "PD"}
+                                     "project": {"key": config['Params']['project']}
                                  },
                                  "steps": steps_object,
                                  "xray_test_repository_folder": folder_name
